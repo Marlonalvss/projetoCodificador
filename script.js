@@ -37,7 +37,7 @@ function DecodificacaoCesar(){
     var pegaEntrada = document.getElementById("entradaText")
     var pegaSaida = document.getElementById("saidaText")
     var deslocamento = Number(document.getElementById("desloc").value)
-    var textoEntrada = pegaEntrada.value
+    
     var textoSaida = ""
 
     for(i = 0; i < textoEntrada.length; i++){
@@ -46,6 +46,33 @@ function DecodificacaoCesar(){
         var charcodeToString = String.fromCharCode(conversao);
         textoSaida += charcodeToString
     }
-        pegaSaida.innerText = textoSaida
+        
 
+}
+
+/* --------------- BASE 64 CODIFICAR E DECODIFICAR ------------- */
+
+var botao64 = document.getElementById("cod64")
+var botao64Decod = document.getElementById("decod64")
+botao64.addEventListener("click",conversaoB64)
+botao64Decod.addEventListener("click",DecodificacaoB64) 
+
+function conversaoB64(){
+    var pegaEntrada = document.getElementById("entradaText")
+    var pegaSaida = document.getElementById("saidaText")
+    var textoEntrada = pegaEntrada.value
+
+    var palavraConvertida = btoa(textoEntrada); // "btoa" no Javascript faz a função de converter a string em 
+    // base64 automaticamente. ou seja só foi necessário pegar o valor e passar dentro do btoa.
+    pegaSaida.innerText = palavraConvertida
+}
+
+function DecodificacaoB64(){
+    var pegaEntrada = document.getElementById("entradaText")
+    var pegaSaida = document.getElementById("saidaText")
+    var textoEntrada = pegaEntrada.value
+
+    var palavraConvertida = atob(textoEntrada);// "atob" no Javascript faz a função de converter a codificação em 
+    // string automaticamente. ou seja só foi necessário pegar o valor e passar dentro do atob.
+    pegaSaida.innerText = palavraConvertida
 }
