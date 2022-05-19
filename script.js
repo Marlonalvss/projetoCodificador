@@ -65,7 +65,7 @@ function conversaoB64() {
 
     var palavraConvertida = btoa(textoEntrada); // "btoa" no Javascript faz a função de converter a string em 
     // base64 automaticamente. ou seja só foi necessário pegar o valor e passar dentro do btoa.
-    pegaSaida.innerText = palavraConvertida
+    pegaSaida.innerHTML = palavraConvertida
 }
 
 function DecodificacaoB64() {
