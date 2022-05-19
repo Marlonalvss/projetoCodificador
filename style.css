@@ -97,6 +97,7 @@ main {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    justify-content: flex-end;
 }
 
 #flecha {
@@ -132,15 +133,29 @@ h2 {
     align-items: center;
     justify-content: center;
     text-shadow: 1px 1px 1px black;
+    
+}
+#cDC{
+    justify-content: end;
+    align-items: flex-end;
+    margin-bottom: 7%;
+}
+#codInput{
+    width: 100%;
+    height: 16%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #codCesar {
-    width: 75%;
+    width: 35%;
     height: 100%;
 }
 
 #desloc {
-    width: 25%;
+    width: 13%;
     height: 100%;
     text-align: center;
     border-radius: 5px;
@@ -153,6 +168,7 @@ h2 {
 
 #cod64,
 #decod64 {
+    
     width: 47%;
     height: 15%;
 }
@@ -162,6 +178,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
 button {
