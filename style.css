@@ -1,45 +1,80 @@
-/*---- RESET DO CSS ----*/ 
-*{
+/*---- RESET DO CSS ----*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+@font-face {
+    font-family: abnes;
+    src: url(./assets/font/abnes.ttf);
+}
+
+body {
     width: 100%;
     height: 100vh;
     background-color: aqua;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-around;
+    background-image: url(https://media0.giphy.com/media/077i6AULCXc0FKTj9s/giphy.gif);
 }
+
 /* --- HEADER DA PAGINA --- */
 
-header{
+header {
     width: 100%;
     height: 15vh;
-    background-color: blue;
+    background-color: rgba(43, 203, 247, 0.555);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-h3{
-    background-color: aquamarine;
+    justify-content: space-evenly;
 }
 
-a{
-    background-color: rgb(16, 192, 223);
-    width: 30%;
-    height: 10%;
+h3 {
+    font-family: abnes;
+    font-size: 220%;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+#botoesDescubra {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+#cCesar {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+a {
+    font-size: 140%;
+    width: 20%;
+    height: 100%;
     text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    border-radius: 5px;
 }
 
 /* --- MAIN DA PÁGINA ---*/
 
-main{
-    width: 70%;
-    height: 80vh;
-    background-color: red;
+main {
+    width: 60%;
+    height: 70vh;
+    background-color: rgba(43, 203, 247, 0.555);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -47,15 +82,15 @@ main{
     justify-content: space-around;
 }
 
-#opcoes{
-    background-color: blueviolet;
+#opcoes {
     width: 100%;
     height: 50%;
     display: flex;
     flex-direction: row;
 }
-#cifraDeCesar, #base64{
-    background-color: yellow;
+
+#cifraDeCesar,
+#base64 {
     width: 50%;
     height: 80%;
     display: flex;
@@ -64,30 +99,98 @@ main{
     justify-content: center;
 }
 
+#flecha {
+    font-size: 300%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
 #entradaSaida {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: blueviolet;
     width: 100%;
     height: 50%;
     display: flex;
-    
+
 }
-textarea{
+
+textarea {
     width: 40%;
     height: 80%;
     border-radius: 10px;
     background-color: white;
 }
 
-/* FOOTER DA PÁGINA */
-
-footer{
+h2 {
+    font-family: abnes;
+    color: white;
     width: 100%;
-    height: 5vh;
-    background-color: green;
+    height: 50%;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+#codCesar {
+    width: 75%;
+    height: 100%;
+}
+
+#desloc {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#decodCesar {
+    width: 48%;
+    height: 15%;
+}
+
+#cod64,
+#decod64 {
+    width: 47%;
+    height: 15%;
+}
+
+#base64 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    font-size: 90%;
+}
+
+/* FOOTER DA PÁGINA */
+
+footer {
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(43, 203, 247, 0.555);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marlonlinkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: fantastic;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 120%;
+}
+
+.marlonlinkedin:hover {
+    font-size: 130%;
+    transition: 1s;
 }
