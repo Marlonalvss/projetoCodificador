@@ -37,7 +37,7 @@ function DecodificacaoCesar() {
     var pegaEntrada = document.getElementById("entradaText")
     var pegaSaida = document.getElementById("saidaText")
     var deslocamento = Number(document.getElementById("desloc").value)
-
+    var textoEntrada = pegaEntrada.value
     var textoSaida = ""
 
     for (i = 0; i < textoEntrada.length; i++) {
@@ -46,6 +46,7 @@ function DecodificacaoCesar() {
         var charcodeToString = String.fromCharCode(conversao);
         textoSaida += charcodeToString
     }
+    pegaSaida.innerText = textoSaida
 
 
 }
